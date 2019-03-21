@@ -151,7 +151,7 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
     nLastBlockWeight = nBlockWeight;
 
     // Create coinbase transaction.
-    CMutableTransaction coinbaseTx;
+    CMutableTransaction coinbaseTx; // Coinbase Transaktion 
     coinbaseTx.vin.resize(1);
     coinbaseTx.vin[0].prevout.SetNull();
     coinbaseTx.vout.resize(1);
